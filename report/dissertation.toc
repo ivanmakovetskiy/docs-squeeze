@@ -1,0 +1,61 @@
+\changetocdepth {2}
+\babel@toc {russian}{}\relax 
+\tocheader 
+\contentsline {chapter}{\chapternumberline {1}Cоздание проекта в среде MS Visual Studio с поддержкой OpenMP}{5}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {2}Многопоточная программа «Hello World!»}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Входные данные}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Выходные данные}{7}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Пример входных и выходных данных}{7}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Исходный код программы}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Результат выполнения программы}{8}{section.2.5}%
+\contentsline {chapter}{\chapternumberline {3}Программа «I am!»}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Входные данные}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Выходные данные}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Пример входных и выходных данных}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Исходный код программы}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Результат выполнения программы}{10}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Модифицированная программа для вывода только четных нитей}{10}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Результат выполнения модифицированной программы}{11}{section.3.7}%
+\contentsline {chapter}{\chapternumberline {4}Общие и частные переменные в OpenMP: программа «Скрытая ошибка»}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Входные данные}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Выходные данные}{12}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Пример входных и выходных данных}{12}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Выполнение работы}{13}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Определение переменной rank как общей}{13}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Добавление задержки (имитации длительных вычислений)}{13}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Переопределение переменной rank как частной}{14}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Результат работы программы}{15}{section.4.8}%
+\contentsline {chapter}{\chapternumberline {5}Общие и частные переменные в OpenMP: программа reduction}{16}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Входные данные}{16}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Выходные данные}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Пример входных и выходных данных}{16}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Выполнение работы}{17}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Результат выполнения программы}{18}{section.5.5}%
+\contentsline {chapter}{\chapternumberline {6}Распараллеливание циклов в OpenMP: программа «Сумма чисел»}{19}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Входные данные}{19}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Выходные данные}{19}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Пример входных и выходных данных}{19}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Выполнение работы}{20}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Результат выполнения программы}{21}{section.6.5}%
+\contentsline {chapter}{\chapternumberline {7}Распараллеливание циклов в OpenMP: параметр schedule}{22}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Выполнение работы}{22}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Результат выполнения программы}{23}{section.7.2}%
+\contentsline {chapter}{\chapternumberline {8}Распараллеливание циклов в OpenMP: программа «Число \(\uppi \)»}{24}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Выполнение работы}{24}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Результат выполнения программы}{25}{section.8.2}%
+\contentsline {chapter}{\chapternumberline {9}Распараллеливание циклов в OpenMP: программа «Матрица»}{26}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Входные данные}{26}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Выходные данные}{26}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Выполнение задания}{27}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Результат выполнения программы}{28}{section.9.4}%
+\contentsline {chapter}{\chapternumberline {10}Параллельные секции в OpenMP: программа «I'm here!»}{29}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Выполнение задания}{29}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Результат выполнения программы для 3, 2 и 4 параллельных секций}{30}{section.10.2}%
+\contentsline {chapter}{\chapternumberline {11}Исследование масштабируемости OpenMP-программ}{32}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Программа «Матрица»}{32}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Модификация программы «Матрица»}{32}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Результат для программы «Матрица»}{35}{subsection.11.1.2}%
+\contentsline {subsection}{\numberline {11.1.3}Вычисление ускорения}{35}{subsection.11.1.3}%
+\contentsline {section}{\numberline {11.2}Программа «Число пи»}{36}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Модификация программы «Число пи»}{36}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Результат для программы «Пи»}{37}{subsection.11.2.2}%

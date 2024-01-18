@@ -1,0 +1,37 @@
+\chapter{Cоздание проекта в среде MS Visual Studio с поддержкой OpenMP}
+
+\begin{enumerate}
+   \item Создадим на рабочем столе папку «Маковецкий».
+
+    \item Запустим Microsoft Visual Studio 2010.
+
+    \item Создадим проект. Для этого выберем пункт в меню File -> New -> Project, или нажмем Ctrl+Shift+N.
+
+    \item В окне New Project в раскрывающемся списке Visual C++ выберем Win32. В подокне в середине выберем Win32 Console Application. Внизу введем имя проекта Name и место расположения проекта Location и нажмем кнопку OK.
+    \item В открывшемся окне Win32 Application Wizard --- example1 нажмем кнопку Next, и затем в Additional options поставим галочку напротив Empty project. Нажмем кнопку Finish.
+        \item Теперь создадим файл с кодом приложения. Выберите пункт в ме-
+        ню Project
+        -> Add New Item, или нажмите Ctrl+Shift+A. В категории Visual
+        C++ выберем подкатегорию Code. В подокне в середине установим С++
+        File (.cpp). Введите имя файла, например, source, и нажмите кнопку Add.
+        \item В открывшемся окне source.cpp введем следующий код на языке С:
+            \begin{lstlisting}
+int main() {
+    return 0;
+}
+            \end{lstlisting}
+            Сохраним файл, выбрав пункт меню File -> Save source.cpp, или нажав Ctrl+S.
+        \item Для компиляции приложения выберем пункт меню Debug -> Build Solution, или нажмем F7.
+        \item Для запуска приложения выберем пункт меню Debug -> Start Without Debugging, или нажмем Ctrl+F5.
+        \item Для включения поддержки OpenMP установим дополнительные параметры компиляции проекта:
+            \begin{itemize}
+            \item В главном меню выберем Project-> Имя проекта Properties.
+            \item В открывшемся окне выберем Configuration Properties / C/C++ /
+                Language. Установим для опции OpenMP Support значение Yes
+                (/openmp).
+            \end{itemize}
+        \item Для компиляции приложения нажмем F7.
+        \item Для запуска приложения нажмем Ctrl+F5.
+\end{enumerate}
+
+\FloatBarrier
