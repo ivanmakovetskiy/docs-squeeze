@@ -1,46 +1,47 @@
 import asyncio
 import logging
 
-from aiogram.dispatcher import FSMContext
-from aiogram.dispatcher.filters import Text
-from keyboards import get_kb_start, get_ikb
-from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from aiogram.dispatcher.filters.state import StatesGroup, State
 from conf import TOKEN
-from aiogram import Bot, types, Dispatcher
-
+from aiogram import Bot, Dispatcher, F
+from commands import set_commands
+from handlers import get_start, start_dow, dow_file
+from aiogram.filters import Command
+from states import RegisterState
 bot = Bot(TOKEN)
-str = MemoryStorage()
-dp = Dispatcher(bot, storage=str)
+dp = Dispatcher()
 
-class ProfileStatesGroup(StatesGroup):
-    start = State()
-    select_type = State()
-    transform = State()
 
-async def main():
+async def start():
     logging.basicConfig(level=logging.INFO)
-    await dp.start_polling(bot)
+    await set_commands(bot)
+    await dp.start_polling(bot , skip_updates=True)
 
-
-async def cmd_start(message: types.Message, state: FSMContext):
-    await bot.send_message(
-        chat_id=message.chat.id,
+dp.message.register(get_start, Command(commands='start'))
+dp.message.register(start_dow, F.text == 'Загрузить PDF')
+dp.message.register(dow_file, RegisterState.DowPDF)
+"""
+@dp.message(CommandStart())
+async def cmd_start(message: types.Message):
+    await message.answer(
         text='Добро пожаловать в бот! Выберите тип файла, который хотите загрузить',
         reply_markup=get_ikb()
     )
-    await ProfileStatesGroup.select_type.set()
-def register_command(dp: Dispatcher):
-    dp.register_message_handler(cmd_start, commands='start', state='*')
-register_command(dp)
+@dp.message(lambda message: message.text.startswith('/'))
+async def handle_command(message: types.Message,):
+    await bot.send_message(
+        chat_id=message.chat.id,
+        text=f'Неизвестная команда: {message.text}. Выберите тип файла, который хотите загрузить',
+        reply_markup=get_ikb()
+    )
 
-@dp.message_handler(Text(startswith='/'))
-async def cmd_non(message: types.Message, state: FSMContext) -> None:
-    await message.answer('Неизвестная команда. Попробуйте ввести /help')
-    await ProfileStatesGroup.start.set()
+@dp.message(Tet(startswith='/'))
+async def cmd_non(message: types.Message) -> None:
+    await message.answer(f'Неизвестная команда: {message.text} Попробуйте ввести /help')
 
-@dp.callback_query_handler(lambda callback: True, state=ProfileStatesGroup.select_type)
-async def model_callback(callback: types.CallbackQuery, state: FSMContext):
+
+
+@dp.callback_query(lambda callback: True)
+async def model_callback(callback: types.CallbackQuery,):
     try:
         prompt_data = {
             'PDF': 'PDF',
@@ -53,11 +54,11 @@ async def model_callback(callback: types.CallbackQuery, state: FSMContext):
                 chat_id=callback.message.chat.id,
                 text='Отправьте файл'
             )
-            await ProfileStatesGroup.transform.set()
+
         elif callback.data == "<--":
             await callback.message.answer('Возвращаемся назад...')
             await callback.answer()
-            await state.finish()
+
             await bot.send_message(
                 chat_id=callback.message.chat.id,
                 text='Добро пожаловать в бот! Выберите тип файла, который хотите загрузить',
@@ -66,7 +67,6 @@ async def model_callback(callback: types.CallbackQuery, state: FSMContext):
         else:
             await callback.message.delete()
             await callback.answer()
-            await state.finish()
             await bot.send_message(
                 chat_id=callback.message.chat.id,
                 text='Добро пожаловать в бот! Выберите тип файла, который хотите загрузить',
@@ -74,6 +74,6 @@ async def model_callback(callback: types.CallbackQuery, state: FSMContext):
             )
     except Exception as e:
         logging.exception(e)
-
+"""
 if __name__ == '__main__':
-    asyncio.run(main())
+    asyncio.run(start())

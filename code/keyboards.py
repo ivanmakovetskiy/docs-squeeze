@@ -1,15 +1,11 @@
-from aiogram.types import KeyboardButton, InlineKeyboardButton, ReplyKeyboardMarkup, InlineKeyboardMarkup
+from aiogram.types import KeyboardButton,  ReplyKeyboardMarkup
 
 
-def get_kb_start() -> ReplyKeyboardMarkup:
-    kb = ReplyKeyboardMarkup(resize_keyboard=True)
-    kb.add(KeyboardButton('/pdf_transform'))
-    return kb
+pdf_keyboard = ReplyKeyboardMarkup(keyboard=[
+    [
+        KeyboardButton(
+            text='Загрузить PDF'
+        )
+    ]
+],resize_keyboard=True,one_time_keyboard=True, input_field_placeholder='Для продолжения нажмите на кнопку ниже')
 
-
-def get_ikb() -> InlineKeyboardMarkup:
-    ikb = InlineKeyboardMarkup(row_width=2)
-    ikb.add(InlineKeyboardButton(text='Загрузить PDF', callback_data="PDF"),
-            InlineKeyboardButton(text='Загрузить TXT', callback_data="TXT")).add(InlineKeyboardButton(text='<--',callback_data="<--"))
-
-    return ikb
