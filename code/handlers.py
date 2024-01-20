@@ -34,7 +34,6 @@ async def dow_file(message: Message, bot: Bot, state:FSMContext):
         file_content = response.content
         dic_r = r"C:\Users\vladp\NIR_BOT\code\out"
         response_local_path = rf'{dic_r}\{file_id}.txt'
-        # Далее можно сохранить содержимое файла или обработать по вашему усмотрению
         with open(response_local_path, 'wb') as output_file:
             output_file.write(file_content)
         doc = FSInputFile(response_local_path)
