@@ -1,12 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.23)  18 JAN 2024 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.9.23)  22 JAN 2024 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**dissertation.tex
-(./dissertation.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21>
-(/usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
+**\nonstopmode\input dissertation.tex
+(./dissertation.tex (/usr/share/texlive/texmf-dist/tex/latex/memoir/memoir.cls
 Document Class: memoir 2021/06/16 v3.7p configurable book, report, article docu
 ment class
 \onelineskip=\skip47
@@ -2025,6 +2022,16 @@ Font: 1
 AltFont: 1
 Bibliography backend: 1
 Precompile images: 0
+Runaway argument?
+! Paragraph ended before \end  was complete.
+<to be read again> 
+                   \par 
+l.51 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -2039,26 +2046,26 @@ Package csquotes Info: Redefining alias 'default' -> 'russian'.
 )
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2123,8 +2130,8 @@ File: siunitx-abbreviations.cfg 2021-04-17 v2.8e siunitx: Abbreviated units
 -English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-LaTeX Info: Redefining \th on input line 51.
-Package hyperref Info: Link coloring ON on input line 51.
+LaTeX Info: Redefining \th on input line 52.
+Package hyperref Info: Link coloring ON on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -2138,10 +2145,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 51.
-LaTeX Info: Redefining \ref on input line 51.
-LaTeX Info: Redefining \pageref on input line 51.
-LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+LaTeX Info: Redefining \nameref on input line 52.
 (./dissertation.out) (./dissertation.out)
 \@outlinefile=\write9
 \openout9 = `dissertation.out'.
@@ -2193,16 +2200,16 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'dissertation.bbl' not found.
 
 No file dissertation.bbl.
-Package biblatex Info: Reference section=0 on input line 51.
-Package biblatex Info: Reference segment=0 on input line 51.
+Package biblatex Info: Reference section=0 on input line 52.
+Package biblatex Info: Reference segment=0 on input line 52.
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -2215,7 +2222,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout2 = `Dissertation/title.aux'.
 
  (./Dissertation/title.tex
-<images//logo.png, id=17, 1128.215pt x 558.085pt>
+<images//logo.png, id=65, 1128.215pt x 558.085pt>
 File: images//logo.png Graphic file (type png)
 <use images//logo.png>
 Package pdftex.def Info: images//logo.png  used on input line 5.
@@ -2237,18 +2244,72 @@ Package cleveref Info: loaded `russian' language definitions on input line 2.
 \openout2 = `Dissertation/part1.aux'.
 
 
-(./Dissertation/part1.tex) [3.3
+(./Dissertation/part1.tex [3.3
 
 
 
+
+] [4.4]
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 
+40.
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
+File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+! Undefined control sequence.
+l.45 ...±Р°РІР»СЏРµС‚СЃСЏ РІ СЃР»РѕРІР°СЂСЊ \textt
+                                                  {spans}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.47 ...ёСЂСѓРµС‚СЃСЏ РїСѓС‚СЊ РІС‹РІРѕРґР° \textt
+                                                  {(out\_path)} РґР»СЏ РєР°Р...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[5.5
+
+] [6.6] [7.7] [8.8] [9.9]
+Underfull \hbox (badness 2165) in paragraph at lines 130--131
+\T2A/cmr/m/n/14.4 та^^?та^^?ми от^^?прав^^?ля^^?ет^^?ся поль^^?зо^^?ва^^?те^^?л
+ю в ка^^?че^^?стве от^^?ве^^?та на за^^?прос
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+\T2A/cmr/m/n/14.4 с ис^^?поль^^?зо^^?ва^^?ни^^?ем \T2A/cmtt/m/n/14.4 FileRespon
+se\T2A/cmr/m/n/14.4 . Ме^^?диа-^^?тип ука^^?зы^^?ва^^?ет^^?ся как
+ []
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 132--133
+\T2A/cmr/m/n/14.4 пря^^?мую (\T2A/cmtt/m/n/14.4 if __name__ == "__main__":\T2A/
+cmr/m/n/14.4 ), то сер^^?вер за^^?пус^^?ка^^?ет^^?ся с
+ []
+
+<Dissertation/images//API.png, id=160, 271.51437pt x 417.56pt>
+File: Dissertation/images//API.png Graphic file (type png)
+<use Dissertation/images//API.png>
+Package pdftex.def Info: Dissertation/images//API.png  used on input line 136.
+(pdftex.def)             Requested size: 248.96162pt x 382.89192pt.
+<Dissertation/images//NIR.png, id=162, 379.91937pt x 522.95375pt>
+File: Dissertation/images//NIR.png Graphic file (type png)
+<use Dissertation/images//NIR.png>
+Package pdftex.def Info: Dissertation/images//NIR.png  used on input line 145.
+(pdftex.def)             Requested size: 497.92325pt x 685.4016pt.
+[10.10] [11.11 <./Dissertation/images//API.png>] [12.12 <./Dissertation/images/
+/NIR.png>] [13.13]) [14.14
 
 ]
 
 Package caption Warning: Unused \captionsetup[table] on input line 25.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: Unused \captionsetup[figure] on input line 39.
 See the caption package documentation for explanation.
 
 
@@ -2470,42 +2531,35 @@ images//logo.png
 Dissertation/contents.tex
 common/renames.tex
 Dissertation/part1.tex
+ t2acmtt.fd    2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+Dissertation/images//API.png
+Dissertation/images//NIR.png
 common/renames.tex
  ***********
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 0E1A3F78AEE748ABE9D33114A4655DB6;51.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                dissertation
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: B469A705DBA00EE712DCF8D87BEBD79E;2410.
 Package logreq Info: Writing requests to 'dissertation.run.xml'.
 \openout1 = `dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 49136 strings out of 478287
- 946895 string characters out of 5849289
- 1978752 words of memory out of 5000000
- 66480 multiletter control sequences out of 15000+600000
- 479068 words of font info for 56 fonts, out of 8000000 for 9000
+ 49295 strings out of 478287
+ 949299 string characters out of 5849289
+ 1982145 words of memory out of 5000000
+ 66560 multiletter control sequences out of 15000+600000
+ 479378 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,11n,109p,1157b,3181s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 115i,11n,109p,1342b,3181s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf
 /fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on dissertation.pdf (3 pages, 75661 bytes).
+b></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sftt1440.pfb>
+Output written on dissertation.pdf (14 pages, 240700 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 54 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -45,6 +45,7 @@
 %
 %\includeonly{Dissertation/part2}
 %\includeonly{Dissertation/contents,Dissertation/appendix,Dissertation/conclusion}
+\end
 %
 % Если все команды закомментированы, то документ будет выведен в PDF файл полностью
 
@@ -64,7 +65,6 @@
 \ifnumequal{\value{contnumtab}}{1}{\counterwithout{table}{chapter}
 }{\counterwithin{table}{chapter}}
 \include{Dissertation/part1}           % Глава 1
-
 
 \setcounter{totalchapter}{\value{chapter}} % Подсчёт количества глав
 \end{document}
